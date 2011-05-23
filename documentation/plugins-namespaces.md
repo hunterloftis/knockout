@@ -12,9 +12,9 @@ Namespaces provide an elegant solution for multiple view-models. They will bind 
 {% endcapture %}
 {% include plugin-download-link.html %}
 
-### Github
+### Contact
 
-[Knockout.namespaces on github](https://github.com/hunterloftis/knockout.namespaces) is maintained by Hunter Loftis.
+Knockout.namespaces is maintained [on github](https://github.com/hunterloftis/knockout.namespaces) by [mailto:hunter.loftis+namespaces@hunterloftis.com](Hunter Loftis).
 Contributions are welcome, especially to the weak areas of templating and tests.
 
 ### Example: Binding 'user' without the ko.namespaces plugin
