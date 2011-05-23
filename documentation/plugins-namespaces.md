@@ -3,11 +3,9 @@ layout: documentation
 title: Namespaces
 ---
 
-Knockout simplifies and expediates dynamic web development. You change underlying data and the change ripples through your graph of data transformations and out to your UI automatically.
+Many Knockout-based apps will also dynamically fetch data, add it to a view model, and bind the VM. By itself, Knockout supports only a single global view model - if you want multiple (eg ajaxed data), you have to break bindings into specific DOM containers, or use the namespaces plugin.
 
-Many Knockout-based apps will also dynamically fetch data, add it to a view model, and bind the VM. By itself, Knockout supports only a single global view model - if you want multiple (eg ajaxed data), you have to specify DOM containers to applyBindings() for each one. Overlapping containers, multiple applyBindings calls, or global bindings all create problems. Further, it partially breaks the MVVM pattern because now your view models must be aware of your views (to supply container IDs for binding).
-
-Namespaces provide a solution to the multiple-view model problem. They allow you to bind simultaneously with 'data-bind', 'data-bind-spaceA', and 'data-bind-spaceB', without conflict and without specifying any DOM information.
+Namespaces provide a solution to the multiple-view model problem. They will bind 'data-bind', 'data-bind-someSpace', and 'data-bind-anotherSpace', without conflict and without specifying any DOM information.
 
 {% capture plugin_download_link %}
  * __[Version 0.1.0](https://github.com/hunterloftis/knockout.namespaces/tree/master/build/output)__ (1.5kb minified)
