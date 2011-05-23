@@ -14,7 +14,7 @@ Namespaces provide an elegant solution for multiple view-models. They will bind 
 
 ### Contact
 
-Knockout.namespaces is maintained [on github](https://github.com/hunterloftis/knockout.namespaces) by [mailto:hunter.loftis+namespaces@hunterloftis.com](Hunter Loftis).
+Knockout.namespaces is maintained [on github](https://github.com/hunterloftis/knockout.namespaces) by [http://hunterloftis.com](Hunter Loftis).
 Contributions are welcome, especially to the weak areas of templating and tests.
 
 ### Example: Binding 'user' without the ko.namespaces plugin
