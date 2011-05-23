@@ -17,7 +17,7 @@ Namespaces provide an elegant solution for multiple view-models. They will bind 
 [Knockout.namespaces on github](https://github.com/hunterloftis/knockout.namespaces) is maintained by Hunter Loftis.
 Contributions are welcome, especially to the weak areas of templating and tests.
 
-### Example: Binging 'user' without the ko.namespaces plugin
+### Example: Binding 'user' without the ko.namespaces plugin
 
 You want to display information about the logged-in user at several places in your app. The information is represented using the following view model:
 
