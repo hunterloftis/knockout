@@ -3,16 +3,21 @@ layout: documentation
 title: Namespaces
 ---
 
-Many Knockout-based apps will also dynamically fetch data, add it to a view model, and bind the VM. By itself, Knockout supports only a single global view model - if you want multiple (eg ajaxed data), you have to break bindings into specific DOM containers, or use the namespaces plugin.
+Most Knockout-based apps will also dynamically fetch data, add it to a view model, and bind to a view. By itself, Knockout supports only a single global view model - if you want multiple (eg ajaxed data), you must break bindings into specific DOM containers, or use the namespaces plugin.
 
-Namespaces provide a solution to the multiple-view model problem. They will bind 'data-bind', 'data-bind-someSpace', and 'data-bind-anotherSpace', without conflict and without specifying any DOM information.
+Namespaces provide a solution to the multiple-view model problem. They will bind 'data-bind,' 'data-bind-someSpace,' and 'data-bind-anotherSpace' without conflict and without DOM wrappers.
 
 {% capture plugin_download_link %}
  * __[Version 0.1.0](https://github.com/hunterloftis/knockout.namespaces/tree/master/build/output)__ (1.5kb minified)
 {% endcapture %}
 {% include plugin-download-link.html %}
 
-### Example: Logged-in user binding without the ko.namespaces plugin
+### Github
+
+[Knockout.namespaces on github](https://github.com/hunterloftis/knockout.namespaces) is maintained by Hunter Loftis.
+Contributions are welcome, especially to the weak areas of templating and tests.
+
+### Example: Binging 'user' without the ko.namespaces plugin
 
 You want to display information about the logged-in user at several places in your app. The information is represented using the following view model:
 
