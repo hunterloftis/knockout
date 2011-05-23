@@ -76,9 +76,9 @@ Now you can use one namespaced binding per view model:
   ko.applyBindings(userViewModel, 'user');
   ko.applyBindings(userViewModel, 'project');
   
-Also, you can still use the global (default) namespace with no conflicts:
+Also, you can still use standard global bindings without problems. It will ignore namespaced bindings, and they will ignore global bindings:
 
-  ko.applyBindings(globalViewModel);
+  ko.applyBindings(viewModel);
 
 Using namespaces maintains the MVVM pattern (view models don't know anything about views), minimizes code complexity, and allows multiple view models to coexist in harmony.
 
